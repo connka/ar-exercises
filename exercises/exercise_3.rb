@@ -5,4 +5,7 @@ require_relative './exercise_2'
 puts "Exercise 3"
 puts "----------"
 
-# Your code goes here ...
+store = Store.find_by(name: "Gastown")
+store.destroy
+
+puts "There are #{Store.count} stores in the database."
